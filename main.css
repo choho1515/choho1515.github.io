@@ -1,9 +1,9 @@
 /* bg color */
 body {
    @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-   font-family: 'NanumSquare', sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: auto;
+   font-family: 'NanumSquare', sans-serif;
    font-weight: 700;
    font-size: 16px;
    line-height: 1em;
