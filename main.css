@@ -2,10 +2,10 @@
 body {
    @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
    font-family: 'NanumSquare', sans-serif;
-   font-weight: 700;
-   font-size: 16px;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: auto;
+   font-weight: 700;
+   font-size: 16px;
    line-height: 1em;
    width: 100%;
    margin: 0;
