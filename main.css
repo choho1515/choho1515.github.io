@@ -4,13 +4,13 @@ body {
    font-family: 'NanumSquare', sans-serif;
    font-weight: 700;
    font-size: 16px;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: auto;
    line-height: 1em;
    width: 100%;
    margin: 0;
    background: #fafafa;
    transition: .2s all;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: auto;
 }
 body.is-active {
    background: #161616;
