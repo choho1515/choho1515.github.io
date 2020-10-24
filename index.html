@@ -6,17 +6,16 @@
 
 <body>
     <h1>안녕하세요!</h1>
-<div class="flex justify-center items-center vh-100">
-   <div class="element flex flex-wrap items-center">
-      <div class="checkbox-wrap ">
-         <input type="checkbox" class="toggle-switch">
-      </div>
-      <div class="opts">
-         <div class="opt-1"><p>light mode</p></div>
-         <div class="opt-2"><p>dark mode</p></div>
-      </div>
-   </div>
-</div>
+        <section class="setting">
+            <div class="wrapper">
+                <input type="checkbox" onClick="checkActive()" class="switch">
+            </div>
+            <div class="wrapper">
+                <p class="opt-1">밝은 모드</p>
+                <p class="opt-2">어두운 모드</p>
+            </div>
+        </section>
+        <script src="darkmode.js"></script>
     <script>
         $(document).ready(function() {
             $(".toggle-switch").on("click", function(event) {
