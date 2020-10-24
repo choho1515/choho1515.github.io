@@ -25,6 +25,7 @@ function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
+<style>
 $poppins: 'Poppins', sans-serif;
 $background: #FAFAFC;
 $shadow: 0 4px 12px -2px rgba(#6B75A1, .16);
@@ -133,7 +134,8 @@ input[type=checkbox].toggle-switch:checked {
 .checkbox-wrap {
 
 }
-
+</style>
+<script>
 $(document).ready(function() {
  
   $(".toggle-switch").on("click", function(event){
@@ -141,3 +143,4 @@ $(document).ready(function() {
      $("body").toggleClass("active");   
  });
 });
+</script>
