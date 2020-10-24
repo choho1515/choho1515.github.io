@@ -9,16 +9,61 @@
         </script>
     </body>
 </html>
-/* 라이트 */
-@media (prefers-color-scheme: light) {
-  .foo {
-    color: black;
-  }
+/*JS*/
+
+/*CSS↓*/
+/* Dark Mode🌙 */
+/* 밝을 때 표시되는 색상을 지정합니다. */
+.theme-light {
+  --color-primary: #1C2451;
+  --color-secondary: #3949A3;
+  --color-accent: #1C2451;
+  --font-color: #131836;
+  --color-bg: #FFF;
+  --color-footer: #f7f7f7;
+}
+/* 어두울 때 표시되는 색상을 지정합니다. */
+.theme-dark {
+  --color-primary: #7985CB;
+  --color-secondary: #B2B9E1;
+  --color-accent: #3F51B5;
+  --font-color: #ECEEF8;
+  --color-bg: #131836;
+  --color-footer: #1C2451;
+}
+//* --color-는 색상을 지정할 수 있으며, Color: var()로 컬러를 적용합니다. *//
+
+/* 토글 스위치의 사이즈값 */
+.switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  color: #ddd;
+  outline: none;
+  cursor: pointer;
+} 
+
+/* svg 이미지의 트랜지션과 높이값 */
+svg {
+    width:0;
+    height: 24px;
+    transition: all .3s ease-in;
+    transform-origin: center;
+}
+.moon { opacity: 0; width: 0;} /* 밝을 땐 보이지 않습니다. */
+.sun {	width: 24px;
+ 			position: fixed; /* 밝을 때 보이며, 고정 위치값을 지정합니다. */
+ 			bottom: 20px !important;
+ 			left: 20px; 
+}
+.dark .moon {
+  opacity: 1;
+  width: 24px;
+  position: fixed; /* 어두울 때 보이며, 고정 위치값을 지정합니다. */
+  bottom: 20px !important;
+  left: 20px;
 }
 
-/* 다크 */
-@media (prefers-color-scheme: dark) {
-  .foo {
-    color: white;
-  }
-}
+.dark .sun { opacity: 0; width: 0; /* 어두울 땐 보이지 않습니다. */}
