@@ -19,7 +19,11 @@ p, span, small{
 	text-align: center;
 	padding: 20px;
 	background-color: rgb(49, 54, 63) !important;
-	box-shadow:64px 64px 24px 40px rgba(0,0,0,0.4),12px 12px 0px 18px rgba(0,0,0,0.4) inset;
+	box-shadow: -60px 0px 100px -90px #000000,
+        60px 0px 100px -90px #000000;
+
+
+출처: https://mini-sugar.tistory.com/54 [작은설탕의 달콤한 인생로그]
 }
 
 #profile_pic{
