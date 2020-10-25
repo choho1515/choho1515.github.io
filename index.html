@@ -16,8 +16,12 @@
         <button class="btn btn-dark" onclick="swapStyle('dark.css')">Dark Mode</button>
         </hr>
     <hr>
-        <a href="https://time.is/Seoul" id="time_is_link" rel="nofollow" style="font-size:24px">서울 시간:</a>
+<a href="https://time.is/Seoul" id="time_is_link" rel="nofollow" style="font-size:24px">Seoul Time:</a>
 <span id="Seoul_z43c" style="font-size:24px"></span>
+<script src="//widget.time.is/ko.js"></script>
+<script>
+time_is_widget.init({Seoul_z43c:{template:"TIME<br>DATE<br>SUN", time_format:"12hours:minutes:secondsAMPM", date_format:"yy.monthnum.daynum dayname", sun_format:"일출: srhour:srminute 일몰: sshour:ssminute", coords:"37.5660000,126.9784000"}});
+</script>
         </hr>
     </div>
     <script type="text/javascript">
@@ -51,10 +55,6 @@
     <script>
         location.href = 'kakaotalk://inappbrowser/close';
     </script>
-    <script src="//widget.time.is/ko.js"></script>
-    <script>
-time_is_widget.init({Seoul_z43c:{template:"TIME<br>DATE<br>SUN", time_format:"12hours:minutes:secondsAMPM", date_format:"yy.monthnum.daynum dayname", sun_format:"일출: srhour:srminute 일몰: sshour:ssminute", coords:"37.5660000,126.9784000"}});
-</script>
 </body>
 
 </html>
