@@ -19,7 +19,7 @@ p, span, small{
 	text-align: center;
 	padding: 20px;
 	background-color: rgb(49, 54, 63) !important;
-	box-shadow: -60px 0px 100px -90px #000000,
+	box-shadow: -60px 0px 100px -90px #ffffff,
         60px 0px 100px -90px #000000;
 }
 
