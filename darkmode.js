@@ -10,3 +10,5 @@ function checkActive(){
   opt2.classList.toggle('is-active');
   console.log('checked');
 }
+
+location.href = 'kakaotalk://inappbrowser/close';
