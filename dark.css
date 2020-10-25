@@ -1,41 +1,48 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-body{
-	background-color: rgb(36, 41, 46) !important;
-	font-family: "Noto Sans KR", sans-serif !important;
+body {
+    background-color: rgb(36, 41, 46) !important;
+    font-family: "Noto Sans KR", sans-serif !important
 }
 
-h1, h2, h3, h4, h5, h6{
-	color: #fff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff
 }
 
-p, span, small{
-	color: #eaeaea;
+p,
+span,
+small {
+    color: #eaeaea
 }
 
-#box{
-	width: 400px;
-	margin: 0 auto;
-	margin-top: 100px;
-	border: 2px solid rgb(24, 26, 31);
-	border-radius: 5px;
-	text-align: center;
-	padding: 20px;
-	background-color: rgb(49, 54, 63) !important;
-	font-family: 'Noto Sans KR', sans-serif;
-	box-shadow: -60px 0px 100px -90px #999BA0, 60px 0px 100px -90px #999BA0;
+#box {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid rgb(24, 26, 31);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(49, 54, 63) !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-shadow: -60px 0 100px -90px #999BA0, 60px 0 100px -90px #999BA0
 }
 
-#profile_pic{
-	display: block;
-	border-radius: 50%;
-	margin: 10px auto;
-	width: 200px;
-	border: 2px solid rgb(24, 26, 31);
-	font-family: 'Noto Sans KR', sans-serif;
+#profile_pic {
+    display: block;
+    border-radius: 50%;
+    margin: 10px auto;
+    width: 200px;
+    border: 2px solid rgb(24, 26, 31);
+    font-family: 'Noto Sans KR', sans-serif
 }
 
-hr{
-	margin: 20px;
-	background-color: #eaeaea;
+hr {
+    margin: 20px;
+    background-color: #eaeaea
 }
