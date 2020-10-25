@@ -1,61 +1,48 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-body{
-	background-color: #fff;
-	font-family: 'Noto Sans KR', sans-serif;
-}
-text{
-    position: absolute;
-    top: 50%; 
-    right: 50%;
-    transform: translate(50%,-50%);
-    color: #f5f5f5;
-    text-shadow: 1px 1px 1px #919191,
-        1px 2px 1px #919191,
-        1px 3px 1px #919191,
-        1px 4px 1px #919191,
-        1px 5px 1px #919191,
-        1px 6px 1px #919191,
-        1px 7px 1px #919191,
-        1px 8px 1px #919191,
-        1px 9px 1px #919191,
-        1px 10px 1px #919191,
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4);
-}
-h1, h2, h3, h4, h5, h6{
-	color: black;
+body {
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif
 }
 
-p, span, small{
-	color: #888;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black
 }
 
-#box{
-	width: 400px;
-	margin: 0 auto;
-	margin-top: 100px;
-	border: 2px solid #e7e7e7;
-	border-radius: 5px;
-	text-align: center;
-	padding: 20px;
-	background-color: #F8F8F8!important;
-	font-family: 'Noto Sans KR', sans-serif;
-	box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
+p,
+span,
+small {
+    color: #888
 }
 
-#profile_pic{
-	display: block;
-	border-radius: 50%;
-	margin: 10px auto;
-	width: 200px;
-	border: 2px solid #e7e7e7;
-	font-family: 'Noto Sans KR', sans-serif;
+#box {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: #F8F8F8 !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-shadow: -60px 0 100px -90px #000000, 60px 0 100px -90px #000000
 }
 
-hr{
-	margin: 20px;
-	background-color: #eaeaea;
+#profile_pic {
+    display: block;
+    border-radius: 50%;
+    margin: 10px auto;
+    width: 200px;
+    border: 2px solid #e7e7e7;
+    font-family: 'Noto Sans KR', sans-serif
+}
+
+hr {
+    margin: 20px;
+    background-color: #eaeaea
 }
