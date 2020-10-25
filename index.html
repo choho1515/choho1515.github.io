@@ -1,14 +1,14 @@
 <html>
+
 <head>
     <title>Welcome, My homepage!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css">
-    <link rel="stylesheet" type="text/css" href="youtube.css" />
     <link rel="stylesheet" type="text/css" href="roding.css" />
 </head>
 
 <body>
-</div>
+    </div>
     <div id="box">
         <img id="profile_pic" src="profile.png">
         <h2>Yun dongwon</h2>
@@ -27,26 +27,44 @@
                 }
             })
         </script>
-        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 20%; }</style>
+        <style>
+            .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+            }
+
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 20%;
+            }
+        </style>
         <div class='embed-container'><iframe src='https://www.youtube.com/embed/5qap5aO4i9A?amp;autoplay=1' frameborder='0' allowfullscreen></iframe></div>
     </div>
-<div class="loader">
-</div>
-<div class="container" style="display:none;">
-  <h1>로딩 후 화면</h1>
-<div>
-    <script type="text/javascript">
-        var setTheme = localStorage.getItem("theme");
+    <div class="loader">
+    </div>
+    <div class="container" style="display:none;">
+        <h1>로딩 후 화면</h1>
+        <div>
+            <script type="text/javascript">
+                var setTheme = localStorage.getItem("theme");
 
-        function swapStyle(e) {
-            document.getElementById("mystylesheet").href = e, localStorage.setItem("theme", e)
-        }
-        console.log("theme:", setTheme), swapStyle(null == setTheme ? "light.css" : setTheme)
-    </script>
-    <script type="text/javascript" src="roding.js"></script>
-    <script>
-        location.href = "kakaotalk://inappbrowser/close"
-    </script>
+                function swapStyle(e) {
+                    document.getElementById("mystylesheet").href = e, localStorage.setItem("theme", e)
+                }
+                console.log("theme:", setTheme), swapStyle(null == setTheme ? "light.css" : setTheme)
+            </script>
+            <script type="text/javascript" src="roding.js"></script>
+            <script>
+                location.href = "kakaotalk://inappbrowser/close"
+            </script>
 </body>
 
 </html>
