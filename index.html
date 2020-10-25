@@ -2,58 +2,40 @@
 <html>
 
 <head>
-    <title>Welcome, My homepage! </title>
+    <title>Welcome, My homepage!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css">
 </head>
+
 <body>
-    <div id="box">
-        <img id="profile_pic" src="profile.png">
+    <div id="box"><img id="profile_pic" src="profile.png">
         <h2>Yun dongwon</h2>
         <p>I'm Kakao Bot love. :)</p>
-        <hr>
-        <button class="btn btn-light" onclick="swapStyle('light.css')">Light Mode</button>
-        <button class="btn btn-dark" onclick="swapStyle('dark.css')">Dark Mode</button>
-        </hr>
-    <hr>
-<a href="https://time.is/Seoul" id="time_is_link" rel="nofollow" style="font-size:24px">Seoul Time<br></a>
-<span id="Seoul_z43c" style="font-size:24px"></span>
-<script src="//widget.time.is/ko.js"></script>
-<script>
-time_is_widget.init({Seoul_z43c:{template:"TIME<br>DATE<br>SUN", time_format:"12hours:minutes:secondsAMPM", date_format:"yy.monthnum.daynum dayname", sun_format:"Sunrise: srhour:srminute <br> Sunset: sshour:ssminute", coords:"37.5660000,126.9784000"}});
-</script>
-        </hr>
+        <hr><button class="btn btn-light" onclick='swapStyle("light.css")'>Light Mode</button> <button class="btn btn-dark" onclick='swapStyle("dark.css")'>Dark Mode</button>
+        <hr><a href="https://time.is/Seoul" id="time_is_link" rel="nofollow" style="font-size:24px">Seoul Time<br></a><span id="Seoul_z43c" style="font-size:24px"></span>
+        <script src="//widget.time.is/ko.js"></script>
+        <script>
+            time_is_widget.init({
+                Seoul_z43c: {
+                    template: "TIME<br>DATE<br>SUN",
+                    time_format: "12hours:minutes:secondsAMPM",
+                    date_format: "yy.monthnum.daynum dayname",
+                    sun_format: "Sunrise: srhour:srminute <br> Sunset: sshour:ssminute",
+                    coords: "37.5660000,126.9784000"
+                }
+            })
+        </script>
     </div>
     <script type="text/javascript">
-        var setTheme = localStorage.getItem('theme')
-        console.log('theme:', setTheme)
-        if (setTheme == null) {
-            swapStyle('light.css')
-        } else {
-            swapStyle(setTheme)
-        }
+        var setTheme = localStorage.getItem("theme");
 
-        function swapStyle(sheet) {
-            document.getElementById('mystylesheet').href = sheet
-            localStorage.setItem('theme', sheet)
+        function swapStyle(e) {
+            document.getElementById("mystylesheet").href = e, localStorage.setItem("theme", e)
         }
-        /*
-        var setTheme = localStorage.getItem('theme')
-        if (setTheme == null){
-        	swapStyles('light.css')
-        }else{
-        	swapStyles(setTheme)
-        }
-        	
-        
-        function swapStyles(sheet){
-        	document.getElementById('mystylesheet').href = sheet
-        	localStorage.setItem('theme', sheet)
-        }
-        */
+        console.log("theme:", setTheme), swapStyle(null == setTheme ? "light.css" : setTheme)
     </script>
     <script>
-        location.href = 'kakaotalk://inappbrowser/close';
+        location.href = "kakaotalk://inappbrowser/close"
     </script>
 </body>
 
