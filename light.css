@@ -19,6 +19,8 @@ p, span, small{
 	text-align: center;
 	padding: 20px;
 	background-color: #F8F8F8!important;
+	box-shadow: -60px 0px 100px -90px #000000,
+        60px 0px 100px -90px #000000;
 }
 
 #profile_pic{
